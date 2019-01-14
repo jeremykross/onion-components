@@ -13,6 +13,7 @@
                     :border-radius "50%"
                     :box-shadow shadow
                     :color "white"
+                    :cursor "pointer"
                     :right "48px"
                     :height "64px"
                     :font-size "24px"
@@ -25,6 +26,7 @@
   [:.button {:border "1px solid white"
              :border-radius "10000px"
              :color "white"
+             :cursor "pointer"
              :height "40px"
              :line-height "40px"
              :min-width "96px"
