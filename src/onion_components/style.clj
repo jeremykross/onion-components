@@ -24,7 +24,7 @@
 
 (def Button
   [:.button {:border "1px solid white"
-             :border-radius "10000px"
+             :border-radius "4px"
              :color "white"
              :cursor "pointer"
              :height "40px"
@@ -33,9 +33,9 @@
              :font-weight "bold"
              :text-align "center"
              :text-transform "uppercase"}
-   [:&.primary {:background primary
+   [:&.primary {:background "black"
                 :border "1px solid transparent"
-                :color "black"}]])
+                :color "white"}]])
 
 (def BottomBanner
   [:.bottom-banner {:background "black"
