@@ -24,18 +24,20 @@
 
 (def Button
   [:.button {:border "1px solid white"
-             :border-radius "4px"
+             :border-radius "1000px"
              :color "white"
              :cursor "pointer"
-             :height "40px"
              :line-height "40px"
              :min-width "96px"
+             :height "40px"
+             :padding "0 32px"
              :font-weight "bold"
-             :text-align "center"
-             :text-transform "uppercase"}
+             :text-align "center"}
    [:&.primary {:background "black"
                 :border "1px solid transparent"
-                :color "white"}]])
+                :color "white"}]
+   [:&.inverse {:background "white"
+                :color "black"}]])
 
 (def BottomBanner
   [:.bottom-banner {:background "black"
