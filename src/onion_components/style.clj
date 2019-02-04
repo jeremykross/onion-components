@@ -6,15 +6,17 @@
 (def shadow "2px 2px 4px rgba(0,0,0, 0.25)")
 (def primary "#FEA7BD")
 (def secondary "#09EDC8")
+(def text "#212b35")
+(def grey "#dfe3e8")
 
 (def ActionButton
   [:.action-button {:background secondary
-                    :bottom "48px"
+                    :bottom "16px"
                     :border-radius "50%"
                     :box-shadow shadow
                     :color "white"
                     :cursor "pointer"
-                    :right "48px"
+                    :right "32px"
                     :height "64px"
                     :font-size "24px"
                     :line-height "64px"
@@ -28,16 +30,20 @@
              :color "white"
              :cursor "pointer"
              :line-height "40px"
-             :min-width "96px"
+             :min-width "128px"
              :height "40px"
              :padding "0 32px"
              :font-weight "bold"
              :text-align "center"}
+   [:&.outline {:color text
+                :border (str "1px solid " grey)
+                :background "none"}]
    [:&.primary {:background "black"
                 :border "1px solid transparent"
                 :color "white"}]
    [:&.inverse {:background "white"
-                :color "black"}]])
+                :border (str "1px solid " grey)
+                :color text}]])
 
 (def BottomBanner
   [:.bottom-banner {:background "black"
